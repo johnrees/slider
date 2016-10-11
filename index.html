@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unslider/2.0.3/css/unslider.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unslider/2.0.3/css/unslider-dots.css" />
+
+<style type="text/css">
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  body {
+    font-size: 15px;
+  }
+  #slider {
+    width: 940px;
+    height: 460px;
+    background: #000000;
+  }
+  #slider li {
+    background: url(http://www.ypu.manchester.ac.uk/system/post/cover_image/127/Photo_-_Joseph_O_Connor.JPG);
+    background-size: cover;
+  }
+  .slide-container {
+    display: flex;
+    align-items: center;
+
+    height: 460px;
+    padding: 0 125px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0+100 */
+    background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+  }
+  h2 {
+    color: #D57F1E;
+    font-family: "octin-vintage", Georgia, serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 2.4em;
+    line-height: 1em;
+    max-width: 400px;
+  }
+  h2, p{
+    margin-bottom: 0.5em;
+    max-width: 400px;
+    display: block;
+  }
+  p {
+    line-height: 1.4em;
+    font-size: 0.95em;
+    color: #FFF;
+  }
+  a.next {
+    display: block;
+    color: #0485D4;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<div id="slider">
+  <ul>
+    <li style='background-image: url(http://www.ypu.manchester.ac.uk/system/redactor_assets/pictures/300/pic2.jpg)'>
+      <div class="slide-container">
+        <div class="description">
+          <h2>The Young Persons University</h2>
+          <p>is a website for students and teachers, providing learning tools based on the current research being undertaken at the University of Manchester</p>
+          <a href="#" class="next">Next →</a>
+        </div>
+      </div>
+    </li>
+    <li style='background-image: url(http://www.ypu.manchester.ac.uk/system/post/cover_image/127/Photo_-_Joseph_O_Connor.JPG)'>
+      <div class="slide-container">
+        <div class="description">
+          <h2>The Blog</h2>
+          <p>Highlights the reasearch being done across the University, featuring articles written by our current postgraduate students. These give you an idea of the types of research pathways open to prospective students, and how to find out more information. The blog also features series such as 'Undergraduate Research' and 'Thinking Careers' and promotes public engagement activities across the university</p>
+          <a href="#" class="next">Next →</a>
+        </div>
+      </div>
+    </li>
+    <li style='background-image: url(http://www.ypu.manchester.ac.uk/system/post/cover_image/124/Kirsty_Mcintyre_photo_1.png)'>
+      <div class="slide-container">
+        <div class="description">
+          <h2>On this site you will find</h2>
+          <p>Self-study challenges related to the main subject disciplines at the University: EPS (Engineering and Physical Sciences), Humanities, Life Sciences and Medical and Human Sciences. These challenges are designed to outline key concepts within a particular subject area, or to showcase current research being undertaken at the University. Included within each challenge is the option to discover more about studying related subjects at university and future career options. There are also links to additional resources related to that subject area.</p>
+          <a href="#" class="next">Next →</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/unslider/2.0.3/js/unslider-min.js"></script>
+
+<script>
+$(document).ready(function() {
+  $(function() { $('#slider').unslider({
+    arrows: false,
+    animation: 'fade'
+  }) });
+  $('a.next').click(function(e) {
+    e.preventDefault();
+    $('#slider').unslider('next')
+  })
+});
+</script>
+</body>
+</html>
+
