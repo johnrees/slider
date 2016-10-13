@@ -69,10 +69,29 @@
     text-decoration: none;
     text-transform: uppercase;
   }
+  .overlay {
+    position: absolute;
+    left: 0;
+    z-index: 10000;
+
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+  }
+  #top {
+    top: 0;
+  }
+  #bottom {
+    bottom: 0;
+  }
 </style>
 </head>
 <body>
 <div id="slider">
+  <img src="top.png" id="top" class="overlay" />
+  <img src="bottom.png" id="bottom" class="overlay" />
   <ul>
     <li style='background-image: url(http://www.ypu.manchester.ac.uk/system/redactor_assets/pictures/300/pic2.jpg)'>
       <div class="slide-container">
